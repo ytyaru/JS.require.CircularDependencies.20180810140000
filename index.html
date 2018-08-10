@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>require.js 循環参照の解決</title>
+</head>
+<body>
+    <h1>require.js 循環参照の解決</h1>
+    <ul>
+    <li><a href="src/0/index.html">NG 0</a></li>
+    <li><a href="src/1/index.html">NG 1</a></li>
+    <li><a href="src/2/index.html">NG 2</a></li>
+    <li><a href="src/3/index.html">NG 3</a></li>
+    <li><a href="src/4/index.html">OK 4</a></li>
+    <li><a href="src/5/index.html">OK 5</a></li>
+    <li><a href="src/6/index.html">OK 6</a></li>
+    <li><a href="src/7/index.html">OK 7 清書</a></li>
+    <li><a href="src/8/index.html">OK 8 class</a></li>
+    </ul>
+    <p>循環参照を解決するには、`require("")`をトップレベルより下に書けばいい。</p>
+</body>
+</html>
